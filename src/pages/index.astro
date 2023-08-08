@@ -1,17 +1,32 @@
+
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
-import Layout from "@layouts/Layout.astro";
+// Import the components
+import Hero from './components/Hero.astro';
+import AboutMe from './components/AboutMe.astro';
+import Portfolio from './components/Portfolio.astro';
+import CalendarEmbed from './components/CalendarEmbed.astro';
 ---
 
-<Layout title="">
-  <Container>
-    <Hero />
-    <Features />
-    <Logos />
-    <Cta />
-  </Container>
-</Layout>
+<!-- Main Landing Page -->
+<html>
+<head>
+    <title>CreativeBeef.co - Web and Brand Design</title>
+    <link rel="stylesheet" href="/styles/landing.css">
+</head>
+<body>
+    <header>
+        <!-- Logo and navigation can go here -->
+    </header>
+    
+    <main>
+        <Hero />
+        <AboutMe />
+        <Portfolio />
+        <CalendarEmbed />
+    </main>
+
+    <footer>
+        <!-- Footer content can go here -->
+    </footer>
+</body>
+</html>
